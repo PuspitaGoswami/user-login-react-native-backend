@@ -17,5 +17,7 @@ else{
     $Message="Server Error!";
 }
 
-echo($Message);
+$response[]=array("Message"=>$Message);
+
+echo json_encode($response);
 ?>
